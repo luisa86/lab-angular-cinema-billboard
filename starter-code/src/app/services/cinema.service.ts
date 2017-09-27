@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-interface movies{
+interface Movies{
   id: number
   title: string
   poster: string
@@ -14,7 +14,7 @@ interface movies{
 @Injectable()
 export class CinemaService {
 
-ListMovies: Array<movies> = [
+movies: Array<Movies> = [
   {
     id: 1,
     title: "The Shawshank Redemption",
@@ -110,6 +110,8 @@ ListMovies: Array<movies> = [
 ]
 
   constructor() { }
-  getmovies(){}
+  getmovies(){
+    return this.movies
+  }
   getMovie(id){}
 }
