@@ -1,6 +1,5 @@
-<ul *ngFor = "let movie of movies">
-
-    <li><img [src]="movie.poster" alt="" width="200"></li>
-      <li><a [routerLink]="['/movie',movie.id]"> {{movie.title}} </a></li>
-  
-</ul>
+<div class="movies" *ngFor = "let movie of movies">
+      <h4>Room: {{movie.room}}</h4>
+      <img [src]="movie.poster" alt="" width="200" height="200">
+      <h4><a [routerLink]="['/movie',movie.id]" > {{movie.title}} </a></h4>
+</div>

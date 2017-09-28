@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+  background-color: rgba(97, 223, 129, 1);
+}
+h1{
+  text-align: center;
+}
+
+.movies{
+  display: inline-block;
+  margin: 40px;
+}
+
+a{
+  text-decoration:none; 
+}

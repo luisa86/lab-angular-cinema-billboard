@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 
 interface Movies{
+  room: number;
   id: number
   title: string
   poster: string
@@ -16,6 +17,7 @@ export class CinemaService {
 
 movies: Array<Movies> = [
   {
+    room: 1,
     id: 1,
     title: "The Shawshank Redemption",
     poster: "https://i.imgur.com/SuW2ZlC.jpg",
@@ -34,6 +36,7 @@ movies: Array<Movies> = [
       "Gil Bellows"
     ]
   }, {
+    room: 2,
     id: 2,
     title: "The Godfather",
     poster: "https://i.imgur.com/Uzvny9I.jpg",
@@ -52,6 +55,7 @@ movies: Array<Movies> = [
       "Sterling Hayden"
     ]
   }, {
+    room: 3,
     id: 3,
     title: "The Godfather Part II",
     poster: "https://i.imgur.com/abJNkWI.jpg",
@@ -70,6 +74,7 @@ movies: Array<Movies> = [
       "Talia Shire"
     ]
   }, {
+    room: 4,
     id: 4,
     title: "The Dark Knight",
     poster: "https://i.imgur.com/3jLPB46.jpg",
@@ -88,7 +93,7 @@ movies: Array<Movies> = [
       "Gary Oldman"
     ]
   }, {
-
+    room: 5,
     id: 5,
     title: "Schindler's List",
     poster: "https://i.imgur.com/IWZJOmu.jpg",
