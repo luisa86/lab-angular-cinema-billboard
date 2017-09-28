@@ -1,6 +1,12 @@
   <div>
-    This is the page for the movie: {{ movieId }}
-    
+    <h3> Room:{{List.movies[movieId-1].room}}</h3>
+    <img src="{{List.movies[movieId-1].poster}}" width="400" height="400" >
+    <h2>{{List.movies[movieId-1].title}}</h2>
+    <span>{{List.movies[movieId-1].synopsis}}</span>
+    {{List.movies[movieId-1].genres}}
+    <h3>{{List.movies[movieId-1].year}}</h3>
+    <h3>{{List.movies[movieId-1].director}}</h3>
+    <ul><li>{{List.movies[movieId-1].actors}}</li></ul>
   </div>
 
    <button (click)="goToHome()"> home </button>
